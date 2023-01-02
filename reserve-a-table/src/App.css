@@ -1,0 +1,75 @@
+body {
+    margin: 0 /* removes white border around website*/
+}
+
+menu {
+    list-style: none;
+    display: grid;
+}
+
+
+/* NAVBAR STYLING */
+.navbar-menu {
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.navbar-menu > li {
+    max-height: 2rem;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.navbar-menu > li:hover {
+    background-color: blanchedalmond;
+}
+
+.image-nav > img {
+    max-height: 3rem;
+    margin-top: -1rem;
+    margin-left: -1.5rem;
+}
+
+.navbar-menu > .image-nav:hover {
+    background-color: white;
+}
+
+/* FOOTER STYLING */
+footer {
+    min-height: 13rem;
+    background-color: #495E57;
+    color: #FFFFFF;
+    padding-bottom: 1rem;
+}
+
+footer > menu {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.footer-links {
+    padding: 0px;
+}
+
+.footer-links > li {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 0.25rem;
+}
+
+.img-footer {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+}
+
+.img-footer > img {
+    max-height: 8rem;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-right: 3rem;
+
+    background-color: white;
+    padding: 0.25rem;
+}

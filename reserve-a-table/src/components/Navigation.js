@@ -1,8 +1,8 @@
 export default function Navigation() {
     return (
         <nav>
-            <menu>
-                { /* <li><img><a href=""></a></img></li> */ }
+            <menu className="navbar-menu">
+                <li className="image-nav"><img src={require('../assets/nav-logo.png')} alt="Little Lemon logo"></img></li>
                 <li>Home</li>
                 <li>About</li>
                 <li>Menu</li>
