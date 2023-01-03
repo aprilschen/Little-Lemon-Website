@@ -1,5 +1,11 @@
+* {
+    font-family: 'Markazi Text', 'Karla', serif;
+}
+
 body {
-    margin: 0 /* removes white border around website*/
+    margin: 0; /* removes white border around website*/
+    padding: 0;
+    margin-top: -40px;
 }
 
 menu {
@@ -7,30 +13,32 @@ menu {
     display: grid;
 }
 
+a:visited, Link:visited, a:link, Link:link {
+    text-decoration: none;
+    color: black;
+}
 
 /* NAVBAR STYLING */
 .navbar-menu {
     grid-template-columns: repeat(7, 1fr);
+    align-items: center;
 }
 
-.navbar-menu > li {
-    max-height: 2rem;
+.navbar-menu > li, .navbar-menu > a, .navbar-menu > Link {
     text-align: center;
-    padding-top: 1rem;
+    font-size: 30px;
+    padding: 1rem 0 0.5rem 0;
 }
 
-.navbar-menu > li:hover {
-    background-color: blanchedalmond;
+.hover-effect:hover {
+    background-color: #F4CE14;
+    transition: 0.25s;
 }
 
-.image-nav > img {
-    max-height: 3rem;
-    margin-top: -1rem;
-    margin-left: -1.5rem;
-}
-
-.navbar-menu > .image-nav:hover {
-    background-color: white;
+.nav-image {
+    max-height: 4rem;
+    margin-top: 0.7rem;
+    margin-left: -1.25rem;
 }
 
 /* FOOTER STYLING */
@@ -45,14 +53,27 @@ footer > menu {
     grid-template-columns: repeat(4, 1fr);
 }
 
-.footer-links {
-    padding: 0px;
+.footer-header {
+    margin-bottom: -1.25rem;
 }
 
-.footer-links > li {
+.footer-links {
+    padding: 0;
     list-style: none;
+}
+
+.footer-links > a, .footer-links > Link, .footer-links > li {
     text-align: left;
-    margin-bottom: 0.25rem;
+    display: block;
+    color: white;
+    padding-top: 0.2rem;
+    font-family: 'Karla', 'Sans Serif';
+
+}
+
+.footer-links > a:hover, .footer-links > Link:hover {
+    background-color: #495E57;
+    text-decoration: underline;
 }
 
 .img-footer {
@@ -71,5 +92,5 @@ footer > menu {
     margin-right: 3rem;
 
     background-color: white;
-    padding: 0.25rem;
+    padding: 0.5rem;
 }

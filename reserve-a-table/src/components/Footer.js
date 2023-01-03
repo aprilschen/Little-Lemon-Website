@@ -1,36 +1,41 @@
 
+import {Link} from 'react-router-dom';
 export default function Footer() {
     return (
         <footer>
-            <menu className="footer-menu">
+            <menu>
                 <li className="img-footer">
                     <img src={require('../assets/footer-logo.png')} alt="Little Lemon logo"></img>
                 </li>
                 <li>
-                    <h2>Navigation</h2>
+                    <h1 className="footer-header">Navigation</h1>
                     <ul className="footer-links">
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Menu</li>
-                        <li>Reservations</li>
-                        <li>Order Online</li>
-                        <li>Login</li>
+                        <Link to="/">Home</Link>
+                        <Link to="/about">About</Link>
+                        <a href={require('../assets/menu.jpeg')} target="_blank" rel="noreferrer">Menu</a>
+                        <Link to="/reservations">Reservations</Link>
+                        <Link to="/order">Order</Link>
+                        <Link to="/login">Login</Link>
+                    </ul>
+                </li>
+
+                <li>
+                    <h1 className="footer-header">Contact</h1>
+                    <ul className="footer-links">
+                        <li>2395 Maldove Way,</li>
+                        <li>Chicago Illinois</li>
+                        <br></br>
+                        <li>(629)-243-6827</li>
+                        <br></br>
+                        <a href="mailto: info@littlelemon.com" target="_blank" rel="noreferrer">info@littlelemon.com</a>
                     </ul>
                 </li>
                 <li>
-                    <h2>Contact</h2>
+                    <h1 className="footer-header">Connect</h1>
                     <ul className="footer-links">
-                        <li>Address</li>
-                        <li>Phone Number</li>
-                        <li>Email</li>
-                    </ul>
-                </li>
-                <li>
-                    <h2>Connect</h2>
-                    <ul className="footer-links">
-                        <li>Facebook</li>
-                        <li>Instagram</li>
-                        <li>Join us!</li>
+                        <a href="https://www.facebook.com/thelittlelemonshop/" target="_blank" rel="noreferrer">Facebook</a>
+                        <a href="https://www.instagram.com/littlelemonmoon/" target="_blank" rel="noreferrer">Instagram</a>
+                        <a href="https://www.youtube.com/watch?v=3Li-FfypZYE" target="_blank" rel="noreferrer">Join us!</a>
                     </ul>
                 </li>
             </menu>
