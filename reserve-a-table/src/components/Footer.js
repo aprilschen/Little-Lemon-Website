@@ -12,7 +12,7 @@ export default function Footer() {
                     <ul className="footer-links">
                         <Link to="/">Home</Link>
                         <Link to="/about">About</Link>
-                        <a href={require('../assets/menu.jpeg')} target="_blank" rel="noreferrer">Menu</a>
+                        <a href={require('../assets/menu.webp')} target="_blank" rel="noreferrer">Menu</a>
                         <Link to="/reservations">Reservations</Link>
                         <Link to="/order">Order</Link>
                         <Link to="/login">Login</Link>

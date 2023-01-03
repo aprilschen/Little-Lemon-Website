@@ -26,7 +26,6 @@ a:visited, Link:visited, a:link, Link:link {
 
 .navbar-menu > li, .navbar-menu > a, .navbar-menu > Link {
     text-align: center;
-    font-size: 30px;
     padding: 1rem 0 0.5rem 0;
 }
 
