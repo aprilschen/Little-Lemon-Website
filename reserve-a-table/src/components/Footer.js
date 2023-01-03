@@ -7,7 +7,7 @@ export default function Footer() {
                 <li className="img-footer">
                     <img src={require('../assets/footer-logo.png')} alt="Little Lemon logo"></img>
                 </li>
-                <li>
+                <li className = "contact" >
                     <h1 className="footer-header">Navigation</h1>
                     <ul className="footer-links">
                         <Link to="/">Home</Link>

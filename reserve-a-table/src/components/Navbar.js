@@ -1,16 +1,30 @@
 import {Link} from 'react-router-dom';
+import { useState } from 'react';
+import Navigation from './Navigation';
+import Hamburger from '../assets/hamburger.png';
+import Close from '../assets/close.png';
 export default function Navbar() {
+    const [navbarOpen, setNavbarOpen] = useState(false);
+    function handleToggle() {
+        setNavbarOpen(!navbarOpen)
+    }
+
     return (
         <nav>
-            <menu className="navbar-menu">
-                <Link to="/"><img src={require('../assets/nav-logo.png')} alt="Little Lemon logo" className="nav-image"></img></Link>
-                <Link className="hover-effect" to="/"><h1>Home</h1></Link>
-                <Link className="hover-effect" to="/about"><h1>About</h1></Link>
-                <a className="hover-effect" href={require('../assets/menu.webp')} target="_blank" rel="noreferrer"><h1>Menu</h1></a>
-                <Link className="hover-effect" to="/reservations"><h1>Reservations</h1></Link>
-                <Link className="hover-effect" to="/order"><h1>Order Online</h1></Link>
-                <Link className="hover-effect" to="/login"><h1>Login</h1></Link>
-            </menu>
+            <nav className="burger">
+
+                <img src={require('../assets/nav-logo.png')}
+                alt="Little Lemon logo"
+                className="nav-image">
+                </img>
+
+                <button className="burger-icon" onClick = {handleToggle}>
+                    <img src={navbarOpen ? Close : Hamburger}/>
+                </button>
+
+            </nav>
+            <Navigation device="desktop" />
+            {navbarOpen ? <Navigation device="mobile" /> : ""}
         </nav>
     );
 }

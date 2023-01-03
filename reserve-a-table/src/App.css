@@ -1,16 +1,24 @@
 * {
     font-family: 'Markazi Text', 'Karla', serif;
 }
-
 body {
     margin: 0; /* removes white border around website*/
     padding: 0;
-    margin-top: -40px;
+    margin-top: -22px;
 }
 
 menu {
     list-style: none;
     display: grid;
+}
+
+button {
+    background-color: white;
+    border: none;
+}
+
+.burger-icon {
+    margin-top: 1.5rem;
 }
 
 a:visited, Link:visited, a:link, Link:link {
@@ -26,7 +34,15 @@ a:visited, Link:visited, a:link, Link:link {
 
 .navbar-menu > li, .navbar-menu > a, .navbar-menu > Link {
     text-align: center;
-    padding: 1rem 0 0.5rem 0;
+}
+
+.mobile {
+    display: none;
+}
+
+.burger {
+    display: none;
+    grid-template-columns: 5fr 1fr;
 }
 
 .hover-effect:hover {
@@ -92,4 +108,44 @@ footer > menu {
 
     background-color: white;
     padding: 0.5rem;
+}
+
+
+@media screen and (max-width: 600px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: grid;
+        grid-template: auto auto auto auto auto auto auto / auto;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    footer > menu {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .contact {
+        display: none;
+    }
+
+    .img-footer > img {
+        margin-top: 0.5rem;
+
+    }
+
+    ul > * {
+        font-size: 14px;
+    }
+
+    .burger {
+        display: grid;
+    }
+
+    .burger > img {
+        margin-top: 1.5rem;
+        margin-left: 0.5rem;
+    }
 }
