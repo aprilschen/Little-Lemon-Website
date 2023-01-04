@@ -1,7 +1,7 @@
-import Heading from '../sections/mainPages/Heading';
-import Specials from  '../sections/mainPages/Specials';
-import Testimonials from '../sections/mainPages/Testimonials';
-import About from '../sections/mainPages/About';
+import Heading from '../sections/headingPages/Heading';
+import Specials from  '../sections/headingPages/Specials';
+import Testimonials from '../sections/headingPages/Testimonials';
+import About from '../sections/headingPages/About';
 export default function Homepage() {
     return (
         <>

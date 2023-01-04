@@ -1,6 +1,7 @@
 * {
     font-family: 'Markazi Text', 'Karla', serif;
 }
+
 body {
     margin: 0; /* removes white border around website*/
     padding: 0;
@@ -34,6 +35,8 @@ a:visited, Link:visited, a:link, Link:link {
 
 .navbar-menu > li, .navbar-menu > a, .navbar-menu > Link {
     text-align: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 
 .mobile {
@@ -54,6 +57,116 @@ a:visited, Link:visited, a:link, Link:link {
     max-height: 4rem;
     margin-top: 0.7rem;
     margin-left: -1.25rem;
+}
+
+/* CALL TO ACTION */
+.call-to-action {
+    background-color: #495E57;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1.25rem 4rem 1.2rem 4rem;
+    margin-top: -1.4rem;
+    min-height: 20rem;
+}
+
+.hero-text > h1 {
+    font-size: 3rem;
+    margin-bottom: -3rem;
+}
+
+.hero-text > h2 {
+    font-size: 2.5rem;
+}
+
+.hero-image {
+    max-height: 17rem;
+    padding-left: 2rem;
+}
+
+.hero-image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* SPECIALS */
+.specials {
+    padding: 2rem 4rem 2rem 4rem;
+}
+
+.specials-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;}
+
+.menu-card {
+    background-color: #EDEFEE;
+    padding: 0 1rem 0 1rem;
+    margin: 0 1rem 0 1rem;
+}
+
+.menu-card > img {
+    max-height: 10rem;
+    margin: 0 -1rem 0 -1rem;
+}
+
+.specials-carousel {
+    display: none;
+}
+
+/* TESTIMONIAL CARDS */
+.testimonial-cards {
+    padding: 2rem 4rem 2rem 4rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    min-height: 10rem;
+}
+
+.testimonial-card {
+    background-color: #EDEFEE;
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+.testimonials-carousel {
+    display: none;
+}
+
+/* ABOUT */
+.about-us {
+    background-color: #F4CE14;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1.25rem 4rem 1.2rem 4rem;
+    min-height: 22rem;
+    margin-bottom: -1rem;
+}
+
+.double-image {
+    max-height: 18rem;
+    position: relative;
+    top: 4rem;
+    left: 2rem;
+}
+
+.double-image > img {
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-1 {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.about-2 {
+    position: absolute;
+    top: -3.5rem;
+    left: 5rem;
 }
 
 /* FOOTER STYLING */
@@ -110,7 +223,27 @@ footer > menu {
     padding: 0.5rem;
 }
 
+@media screen and (max-width: 60rem) {
+    .specials-carousel {
+        display: block;
+    }
 
+    .specials {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 50rem) {
+    .testimonials-carousel {
+        display: block;
+    }
+
+    .testimonial-cards {
+        display: none;
+    }
+}
+
+/* MEDIA QUERIES*/
 @media screen and (max-width: 600px) {
     .desktop {
         display: none;
@@ -121,6 +254,10 @@ footer > menu {
         grid-template: auto auto auto auto auto auto auto / auto;
         align-items: center;
         padding-left: 0;
+    }
+
+    .call-to-action {
+        margin: 0;
     }
 
     footer > menu {
