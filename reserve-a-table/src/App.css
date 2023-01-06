@@ -6,11 +6,12 @@ label, input, select, textarea, p {
     font-family: 'Karla';
 }
 
-input, select, textarea {
+input, select, option, textarea {
     background-color: #EEEEEE;
     border: none;
     padding: 5px 5px 5px 5px;
     border-radius: 0.2rem;
+    resize: none;
 }
 
 input, select {
@@ -54,7 +55,7 @@ a:visited, Link:visited, a:link, Link:link {
     background-color: #495E57;
     color:#EEEEEE;
     border-style: solid;
-    border-width: 0.1rem;
+    border-width: 1px;
     border-color: #EDEFEE;
     transition: 0.2s;
 }
