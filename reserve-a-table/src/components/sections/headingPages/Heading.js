@@ -6,9 +6,10 @@ export default function Heading() {
                 <section className="hero-text">
                     <h1>Little Lemon</h1>
                     <h2>Chicago</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    <p className="subsection">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <Link to="/reservations"><h1>Reserve a table</h1></Link>
+                    <br></br>
+                    <Link className="action-button" to="/reservations">Reserve a table</Link>
                 </section>
 
                 <section className="hero-image">

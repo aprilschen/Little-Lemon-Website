@@ -1,4 +1,3 @@
-import {Link} from 'react-router-dom';
 import { useState } from 'react';
 import Navigation from './Navigation';
 import Hamburger from '../assets/hamburger.png';
@@ -19,7 +18,7 @@ export default function Navbar() {
                 </img>
 
                 <button className="burger-icon" onClick = {handleToggle}>
-                    <img src={navbarOpen ? Close : Hamburger}/>
+                    <img src={navbarOpen ? Close : Hamburger} alt="Navigation Bar"/>
                 </button>
 
             </nav>
