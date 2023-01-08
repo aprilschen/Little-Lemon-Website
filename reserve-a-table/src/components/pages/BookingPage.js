@@ -5,8 +5,6 @@ import {seededRandom, fetchAPI, submitAPI} from '../../bookingsAPI'
 export default function BookingPage() {
 
     function updateTimes(date) {
-        console.log(date);
-
         return (
             fetchAPI(date)
         );

@@ -11,8 +11,6 @@ export function fetchAPI(date) {
     let result = [];
     let dt = new Date(date)
     let seed = dt.getDate();
-    console.log(dt);
-    console.log(seed);
 
     let random = seededRandom(seed);
     for(let i = 17; i <= 23; i++) {

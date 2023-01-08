@@ -130,6 +130,9 @@ a:visited, Link:visited, a:link, Link:link {
 /* SPECIALS */
 .specials {
     padding: 2rem 5rem 0 5rem;
+    animation-duration: 0.33s;
+    animation-timing-function: ease-in-out;
+    animation-name: slideDownFade;
 }
 
 .specials-topbar {
@@ -197,6 +200,9 @@ a:visited, Link:visited, a:link, Link:link {
 /* TESTIMONIAL CARDS */
 .testimonials {
     padding: 0 5rem 2rem 5rem;
+    animation-duration: 0.33s;
+    animation-timing-function: ease-in-out;
+    animation-name: slideDownFade;
 }
 
 .testimonials-topbar > h1{
@@ -361,7 +367,45 @@ footer > menu {
     margin-bottom: 1.5rem;
   }
 
+  .confirmation-header {
+        position: relative;
+        text-align: center;
+        color: white;
+        margin-top: -1.4rem;
+        min-height: 70vh;
+  }
 
+  .confirmation-image {
+        height: 70vh; /* height of container */
+        width: 100%;
+        object-fit: cover;
+  }
+
+  .redirect-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 12vw;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .redirect-button {
+    background-color: #464646;
+    color: white !important;
+    padding: 2vh 2rem 2vh 2rem;
+    border-radius: 0.5rem;
+    min-width: 12vw;
+    font-family: 'Karla';
+    font-size: 18px;
+  }
+
+  .redirect-button:hover {
+    background-color: #F4CE14;
+    color:#464646 !important;
+    transition: 0.2s;
+  }
 
 /* MEDIA QUERIES*/
 @media screen and (max-width: 60rem) {
@@ -447,6 +491,11 @@ footer > menu {
         font-size: 1.8rem;
         margin-bottom: 2rem;
     }
+
+    .confirmation-header {
+        margin-top: 0rem;
+    }
+
 
     .reserve-header-text {
         font-size: 15px;
@@ -535,6 +584,22 @@ footer > menu {
 
     .reserve-table {
         margin-top: 0rem;
+    }
+
+    .redirect-button {
+        padding: 1vh 2rem 1vh 2rem;
+        font-size: 14px;
+    }
+}
+
+@keyframes slideDownFade {
+    0% {
+      transform: translateY(-15%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
     }
 }
 
