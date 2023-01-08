@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Little-Lemon-Restaurant/static/css/main.08cac4a1.css",
+    "main.js": "/Little-Lemon-Restaurant/static/js/main.7e88782b.js",
+    "static/js/787.1aa91eaf.chunk.js": "/Little-Lemon-Restaurant/static/js/787.1aa91eaf.chunk.js",
+    "static/media/food1.png": "/Little-Lemon-Restaurant/static/media/food1.cf22ea3785b35d4eea84.png",
+    "static/media/food5.jpeg": "/Little-Lemon-Restaurant/static/media/food5.47717fbc1b9f0e72382e.jpeg",
+    "static/media/lemon-dessert.webp": "/Little-Lemon-Restaurant/static/media/lemon-dessert.6af142378d3f539c7ecb.webp",
+    "static/media/bruschetta.jpeg": "/Little-Lemon-Restaurant/static/media/bruschetta.b0415dd9cd625aa27e44.jpeg",
+    "static/media/greek-salad.webp": "/Little-Lemon-Restaurant/static/media/greek-salad.0630522a827a5188a66d.webp",
+    "static/media/food4.webp": "/Little-Lemon-Restaurant/static/media/food4.aef154ce876c762e864c.webp",
+    "static/media/food2.jpeg": "/Little-Lemon-Restaurant/static/media/food2.0dcd90e2c8fd640454bf.jpeg",
+    "static/media/menu.webp": "/Little-Lemon-Restaurant/static/media/menu.9b7e092be47f16ae049f.webp",
+    "static/media/food3.jpeg": "/Little-Lemon-Restaurant/static/media/food3.90486b3529cd6d885d9a.jpeg",
+    "static/media/footer-logo.png": "/Little-Lemon-Restaurant/static/media/footer-logo.4470f9c9e815da98dbb3.png",
+    "static/media/nav-logo.png": "/Little-Lemon-Restaurant/static/media/nav-logo.f89ba834e43f4451ed52.png",
+    "index.html": "/Little-Lemon-Restaurant/index.html",
+    "main.08cac4a1.css.map": "/Little-Lemon-Restaurant/static/css/main.08cac4a1.css.map",
+    "main.7e88782b.js.map": "/Little-Lemon-Restaurant/static/js/main.7e88782b.js.map",
+    "787.1aa91eaf.chunk.js.map": "/Little-Lemon-Restaurant/static/js/787.1aa91eaf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.08cac4a1.css",
+    "static/js/main.7e88782b.js"
+  ]
+}
