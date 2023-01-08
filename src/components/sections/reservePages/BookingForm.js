@@ -72,6 +72,7 @@ export default function ReservationForm(props) {
             <div>
                 <label htmlFor="date">Select Date</label> <br></br>
                 <input type="date" id="date" required
+                value={date}
                 onChange={handleDateChange}></input>
             </div>
 
