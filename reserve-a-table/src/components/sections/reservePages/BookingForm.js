@@ -1,16 +1,32 @@
 import {useState} from 'react';
 
-export default function ReservationForm() {
+export default function ReservationForm(props) {
     const [fName, setFName] = useState("");
     const [lName, setLName] = useState("");
     const [email, setEmail] = useState("");
     const [tel, setTel] = useState("");
     const [people, setPeople] = useState(1);
     const [date, setDate] = useState("");
-    const [time, setTime] = useState([]);
     const [occasion, setOccasion] = useState("");
     const [preferences, setPreferences] = useState("");
     const [comments, setComments] = useState("");
+
+    const [finalTime, setFinalTime] = useState(
+        props.availableTimes.map((times) => <option>{times}</option>)
+    );
+
+    function handleDateChange(e) {
+        setDate(e.target.value);
+
+        var stringify = e.target.value;
+        const date = new Date(stringify);
+        console.log(date);
+
+        props.updateTimes(date);
+
+        setFinalTime(props.availableTimes.map((times) => <option>{times}</option>));
+    }
+
 
     return (
        <form className="reservation-form">
@@ -57,30 +73,15 @@ export default function ReservationForm() {
             <div>
                 <label htmlFor="date">Select Date</label> <br></br>
                 <input type="date" id="date" required
-                value={date}
-                onChange={e => setDate(e.target.value)}></input>
+                onChange={handleDateChange}></input>
             </div>
 
             <div>
                 <label htmlFor="time">Select Time</label> <br></br>
-                <select id="time" required
-                value={time}
-                onChange={e => setTime([e.target.value])}>
-                    <option>11:00am</option>
-                    <option>11:30am</option>
-                    <option>12:00am</option>
-                    <option>12:30am</option>
-                    <option>1:00pm</option>
-                    <option>1:30pm</option>
-                    <option>2:00pm</option>
-                    <option>2:30pm</option>
-                    <option>3:00pm</option>
-                    <option>3:30pm</option>
-                    <option>4:00pm</option>
-                    <option>4:30pm</option>
-                    <option>5:00pm</option>
-                    <option>5:30pm</option>
-                    <option>6:00pm</option>
+                <select id="time" required>
+
+                    {finalTime}
+
                 </select>
             </div>
 
