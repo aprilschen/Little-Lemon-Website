@@ -1,8 +1,19 @@
-# reserve-a-table
-Reserve-a-table service made with React
+# Little Lemon Restaurant
+A detailed and responsive website with table-booking functionality built using React.
 
-### SPECIAL INSTALLS:
-npm i react-router-dom@6
-npm install react-responsive-carousel
-npm install moment --save (didn't end up using)
-npm install react-animate-on-scroll --save (didn't end up using)
+![Screenshot](readme-image1.png)
+
+![Screenshot](readme-image2.png)
+
+### Tech Stack:
+ - HTML, CSS
+ - JSX
+ - React
+
+### Third Party Libraries & APIs:
+ - react-router-dom
+ - react-responsive-carousel
+ - Meta front-end table-booking API
+
+### Install and Run:
+ - Run 'npm start' on the reserve-a-table folder
