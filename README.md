@@ -2,7 +2,7 @@
 A detailed and responsive website with table-booking functionality built using React. You can find the deployed website [here:](https://aprilschen.github.io/Little-Lemon-Restaurant/)
 
 ##### Note: 
-Deployment on Github resulted in some issues, so the link above redirects you to an page on the website without any content. Simply click on the "Home" navbar to be redirected to the main site.
+Deployment on Github resulted in some issues, so the link above redirects you to an page on the website without any content. Simply click on the "Home" button on the navbar to be redirected to the main site.
 
 ![Screenshot](readme-image1.png)
 
