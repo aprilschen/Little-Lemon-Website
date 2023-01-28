@@ -1,9 +1,7 @@
 # Little Lemon Restaurant
 A detailed and responsive website with table-booking functionality built using React.
 
-![Screenshot](readme-image1.png)
-
-![Screenshot](readme-image2.png)
+![Screenshot](assets/readme-image1.png)
 
 ### Tech Stack:
  - HTML, CSS
