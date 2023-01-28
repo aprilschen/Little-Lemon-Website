@@ -1,15 +1,20 @@
 # Little Lemon Restaurant
-A detailed and responsive website with table-booking functionality built using React. You can find the deployed website [here:](https://aprilschen.github.io/Little-Lemon-Restaurant/)
+A dynamic, responsive website calling RESTful Table-booking API.
 
-##### Note: 
-Deployment on Github resulted in some issues, so the link above redirects you to an page on the website without any content. Simply click on the "Home" button on the navbar to be redirected to the main site.
+### Note:
+Deployed website is temporarily unavailable to access while the website is under development.
 
 ![Screenshot](assets/readme-image1.png)
 
 ### Tech Stack:
- - HTML, CSS
- - JSX
+##### Front-end:
  - React
+ - Axios
+
+##### Back-end:
+ - Django, Django-Rest-Framework
+ - MySQL (Database)
+ - CorsHeader
 
 ### Third Party Libraries & APIs:
  - react-router-dom
