@@ -1,19 +1,26 @@
 import {useState} from 'react';
 import {Link} from 'react-router-dom';
+import qs from 'qs'
 import axios from "axios";
 
 export default function ReservationForm(props) {
-    function handleSubmit() {
-        const form = {
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        const info = {
             first_name: fName,
             last_name: lName,
             email: email,
             phone_number: tel,
+            people: people,
             date: date,
-            time: "18:00"
+            time: "18:00",
+            additional_comments: comments
         }
+        console.log(info);
+
         axios
-            .post("http://127.0.0.1:8000/api/book", form)
+            .post("http://127.0.0.1:8000/api/book", qs.stringify(info))
+            window.location.replace('http://localhost:3000/confirmation');
     };
 
     const [fName, setFName] = useState("");
