@@ -14,12 +14,16 @@ Deployed website is temporarily unavailable to access while the website is under
 ##### Back-end:
  - Django, Django-Rest-Framework
  - MySQL (Database)
- - CorsHeader
 
 ### Third Party Libraries & APIs:
  - react-router-dom
  - react-responsive-carousel
- - Meta front-end table-booking API
 
 ### Install and Run:
- - Run 'npm start' on the reserve-a-table folder
+ - Run 'npm start' on the client folder
+ - Run the following commands in the server folder:
+  - python3 manage.py makemigrations
+  - python3 manage.py migrate
+  - python3 manage.py runserver
+ 
+Happy exploring!
