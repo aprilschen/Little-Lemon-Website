@@ -1,5 +1,5 @@
 # Little Lemon Restaurant
-A dynamic, responsive website calling RESTful Table-booking API.
+A dynamic, responsive website querying RESTful Table-booking API & MySQL Database. Features email confirmation and form validation functionality.
 
 ### Note:
 Deployed website is temporarily unavailable to access while the website is under development.
