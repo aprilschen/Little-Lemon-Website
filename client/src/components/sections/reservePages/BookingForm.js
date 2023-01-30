@@ -1,6 +1,21 @@
 import {useState} from 'react';
 import {Link} from 'react-router-dom';
+import axios from "axios";
+
 export default function ReservationForm(props) {
+    function handleSubmit() {
+        const form = {
+            first_name: fName,
+            last_name: lName,
+            email: email,
+            phone_number: tel,
+            date: date,
+            time: "18:00"
+        }
+        axios
+            .post("http://127.0.0.1:8000/api/book", form)
+    };
+
     const [fName, setFName] = useState("");
     const [lName, setLName] = useState("");
     const [email, setEmail] = useState("");
@@ -28,7 +43,7 @@ export default function ReservationForm(props) {
 
 
     return (
-       <form className="reservation-form">
+       <form className="reservation-form" onSubmit={handleSubmit}>
             <div>
                 <label htmlFor="fName">First Name</label> <br></br>
                 <input type="text" id="fName" placeholder="First Name"
@@ -122,7 +137,7 @@ export default function ReservationForm(props) {
                 <br></br>
                 <small><p>Note: You cannot edit your reservation after submission. Please double-check your answer
                     before submitting your reservation request.</p></small>
-                    <Link className="action-button" to="/confirmation">Book Table</Link>
+                    <button type="submit" className="action-button">Book Table</button>
             </div>
        </form>
     );
