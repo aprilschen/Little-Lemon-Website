@@ -5,6 +5,7 @@ A dynamic, responsive website querying RESTful Table-booking API & MySQL Databas
 Deployed website is temporarily unavailable to access while the website is under development.
 
 ![Screenshot](assets/readme-image1.png)
+![Screenshot](assets/readme-image2.png)
 
 ### Tech Stack:
 ##### Front-end:
